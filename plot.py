@@ -34,7 +34,6 @@ for p in cList:
         end_time = time.time()
         running_times_MCC_greedy.append(end_time - start_time)
         print(i)
-    # plotting the running times with n increasing in powers of 2
 
     plt.plot(range(1, 20), running_times_MCC_BF, label='Minimum Coin Change Brute Force')
     plt.plot(range(1, n+1), running_times_MCC_memoize, label='Minimum Coin Change Top Down')
